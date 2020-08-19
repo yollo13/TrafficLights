@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - IBOutlets
     @IBOutlet weak var redLightView: UIView!
     @IBOutlet weak var yellowLightView: UIView!
     @IBOutlet weak var greenLightView: UIView!
+    
     @IBOutlet weak var changeColorButton: UIButton!
     
-    
+    //MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,12 +30,8 @@ class ViewController: UIViewController {
         greenLightView.layer.cornerRadius = 75
         
         changeColorButton.layer.cornerRadius = 10
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
-
+    //MARK: - IB Actions
     @IBAction func changeColorButtonTap() {
         
         
